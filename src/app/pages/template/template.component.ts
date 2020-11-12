@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Console } from 'console';
 
 @Component({
   selector: 'app-template',
@@ -10,6 +11,11 @@ export class TemplateComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  guardar(){
+    console.log('Submit disparado');
+  
   }
 
 }
