@@ -11,7 +11,9 @@ export class TemplateComponent implements OnInit {
 
 
   usuario = {
-    nombre: ''
+    nombre: 'Luis Alejandro',
+    apellido:'Olivares',
+    correo:'alex2761086444@gmail.com'
   }
 
 
