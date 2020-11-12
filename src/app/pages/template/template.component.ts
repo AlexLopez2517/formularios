@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Console } from 'console';
 
 @Component({
@@ -8,13 +9,20 @@ import { Console } from 'console';
 })
 export class TemplateComponent implements OnInit {
 
+
+  usuario = {
+    nombre: 'Carlos'
+  }
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  guardar(){
-    console.log('Submit disparado');
+  guardar( forma: NgForm ){
+    console.log( forma );
+    console.log( forma.value );
   
   }
 
